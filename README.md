@@ -48,65 +48,18 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-
-
-- **HashiCorp Vault (HCP Vault Dedicated)**
-
-  **Managed secrets management** with dynamic credentials and encryption-as-a-service. **Pricing**: **HCP Vault Dedicated Essentials from ~$1.58/cluster/hour** (~$1,152/month for a small cluster) plus **$72.92/client/month** for each authenticated identity; **Standard from ~$1.85/hour** adds performance replication, Sentinel policies, and secrets sync . **Free tier**: Vault Community Edition is free (self-hosted); HCP offers a **$500 trial credit** . **Best for**: organizations wanting Vault's dynamic secrets and PKI capabilities without operating the control plane—**trade-off**: per-client pricing makes costs unpredictable at scale (every pod, container, and user counts) .
-
-
-
-- **AWS Secrets Manager**
-
-  **Managed secrets with native rotation**. **Pricing**: **$0.40 per secret per month** plus **$0.05 per 10,000 API calls** (US pricing; China region shows CNY 2.752/secret and CNY 0.344/10k calls) . **Free tier**: **30-day free trial** from first secret stored; new AWS accounts get up to **$200 in credits** . **Best for**: AWS-centric organizations wanting native RDS/Aurora/Redshift rotation and IAM integration—**trade-off**: rotation only works for supported integration partners; third-party API keys cannot be auto-rotated without a Lambda .
-
-
-
-- **CyberArk**
-
-  **Privileged access management** with secrets management and identity security. **Pricing**: Quote-only; enterprise contracts. **Free tier**: None. **Best for**: enterprises needing the deepest privileged access controls and compliance coverage—**trade-off**: enterprise-only; complex deployment. **Note**: CyberArk reported **$1.44B ARR in 2025** (up 23% YoY) and announced a definitive agreement to be acquired by **Palo Alto Networks**, expected to close in Q3 of PANW's fiscal 2026 .
-
-
-
-- **Doppler**
-
-  **Developer-friendly secrets management** with per-seat pricing. **Pricing**: **Developer free for 3 users**, then **$8/user/month**; **Team $21/user/month** (14-day free trial); **Enterprise custom**. **AI agents and non-human identities ride free** . **Free tier**: Yes, 3 users. **Best for**: small teams wanting minutes-to-setup secrets management with CI/CD and AI agent integrations—**trade-off**: no dynamic credentials, no HSM support, and per-user pricing grows fast on large teams .
-
-
-
-- **Azure Key Vault**
-
-  **Managed secrets, keys, and certificates** within Azure. **Pricing**: Consumption-based; quote-only for full scope. **Free tier**: Limited trial. **Best for**: Microsoft-centric organizations wanting native Azure integration.
-
-
-
-- **Google Secret Manager**
-
-  **Managed secrets within Google Cloud**. **Pricing**: **$0.06 per active secret version per month** plus **$0.03 per 10,000 access operations**; **free tier includes 6 active versions and 10,000 access operations per month** . **Free tier**: Yes, 6 versions/10k ops. **Best for**: GCP organizations wanting native secrets management with a genuine free tier—**trade-off**: rotation notifications cost $0.05 each; no dynamic credentials .
-
-
-
-- **1Password**
-
-  **Password manager with Developer Tools** for secrets automation. **Pricing**: **Business $7.99/user/month**; **Starter $19.95/5 users/month**; **Enterprise custom**. Developer Tools (API keys, certificates, infrastructure secrets) are a **separate product line** . **Free tier**: No free tier for API access. **Best for**: teams already on 1Password wanting to extend into developer secrets—**trade-off**: Developer Tools separate; no dynamic credentials or rotation engine.
-
-
-
-- **Okta**
-
-  **Identity platform** with secrets and credential management via Workflows and Access Gateway. **Pricing**: Quote-only; per-user and per-module models. **Free tier**: Developer edition available. **Best for**: organizations wanting identity and secrets under one governance plane—**trade-off**: secrets management is not Okta's primary focus; complex licensing.
-
-
-
-- **Auth0**
-
-  **Identity platform for applications** with credential management for API access. **Pricing**: Free tier for small projects; paid plans scale by MAU. **Free tier**: Yes, limited. **Best for**: developers wanting API authentication and token management without building auth from scratch—**trade-off**: customer identity focus; not a secrets vault.
-
-
-
-- **Postman**
-
-  **API platform** with auth management for collections and environments. **Pricing**: Free tier; paid per user. **Free tier**: Yes, limited. **Best for**: teams wanting to manage API auth during development and testing—**not** a production secrets management platform.
+| Platform | Company Size (Valuation / Revenue) | Pricing | Free Tier / Trial Limits | Key Focus & Capabilities |
+| :--- | :--- | :--- | :--- | :--- |
+| **Microsoft Azure Key Vault** | ~$3.1T Market Cap (Microsoft) | $0.03 per 10,000 operations (keys/secrets/cert operations) | 30-day trial with $200 free Azure credits; free storage (pay only per operation) | Native Azure secrets, keys, and HSM certificate storage. |
+| **Google Secret Manager** | ~$2.1T Market Cap (Alphabet) | $0.06 per active secret version/mo + $0.03 per 10,000 operations | Free forever: 6 active secret versions and 10,000 access operations per month | Native GCP secret storage, replication, and audit logging. |
+| **AWS Secrets Manager** | ~$2.0T Market Cap (Amazon) | $0.40 per secret per month + $0.05 per 10,000 API calls | 30-day free trial from 1st stored secret; new accounts get up to $200 credits | Managed secrets with native automatic rotation for RDS, Aurora, and Redshift. |
+| **CyberArk (Privilege Cloud)** | ~$1.44B ARR / $18.5B Market Cap (Acq. pending PANW) | From ~$125/user/month (~$1,500/user/year list, typically 25-user minimum) | No public self-service free tier; guided 30-day PoC evaluation upon request | Enterprise privileged access management (PAM), dynamic credential brokerage, and compliance. |
+| **Okta** | ~$2.6B ARR / ~$15B Market Cap | From $6/user/mo (Starter) to $17/user/mo (Essentials); APIAM add-on ~$2/user/mo (Enterprise custom) | Integrator Free Plan limited to 10 active users; 30-day enterprise trial | Workforce and customer identity governance with API Access Management and OAuth tokens. |
+| **Auth0** (by Okta) | Part of Okta (~$2.6B ARR) / $6.5B Acq. Val | B2C from $35/mo (500 MAU); B2B from $150/mo (500 MAU) | Free forever: up to 25,000 MAUs, unlimited social connections, and 1 enterprise connection | Developer-first CIAM/B2B identity platform with token minting and API authorization. |
+| **HashiCorp Vault (HCP Vault Dedicated)** | $350M+ ARR / $6.4B Acq. (by IBM) | HCP Vault Essentials from ~$1.58/cluster/hour (~$1,152/mo) + $72.92/client/mo; Standard from ~$1.85/hr | Self-hosted Community Edition is 100% free; HCP Dedicated provides $500 trial credits | Managed Vault clusters with dynamic secrets, PKI engine, and transit encryption. |
+| **1Password** | $408M+ ARR / $6.8B Valuation | Business at $7.99/user/month; Starter Pack at $19.95/month (up to 5 users) | 14-day free trial on Business & Teams plans (no credit card required) | Credential management extending to developer CLI, SSH agent, and service accounts. |
+| **Postman** | $313M+ ARR / $3.6B–$5.6B Valuation | Basic/Team from $19/user/month (billed annually); Solo paid plans from $14/mo | Free forever: 1 user (solo developer) with unlimited collection runs and mock calls | API collaboration platform managing environment secrets, tokens, and mock auth. |
+| **Doppler** | ~$10M–$20M ARR / ~$80M Valuation | Developer tier free (up to 3 seats); Team tier at $8/user/month or $21/user/month | Free forever: up to 3 seats with unlimited projects, environments, and secrets sync | Developer-first secrets sync and orchestration across local envs, CI/CD, and AI agents. |
 
 
 
