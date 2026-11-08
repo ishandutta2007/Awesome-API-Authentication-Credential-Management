@@ -73,29 +73,61 @@ The global secrets management market is estimated at **$2.43 billion in 2025** a
 
 ## Open-Source GitHub Projects
 
+- **HashiCorp Vault** [![GitHub stars](https://img.shields.io/github/stars/hashicorp/vault?style=social&color=white)](https://github.com/hashicorp/vault/stargazers)
+  - **Description**: The most mature open-source secrets engine (MPL 2.0 / BSL), free and self-hosted. Provides KV storage, dynamic secrets for databases and clouds, transit encryption-as-a-service, and PKI certificate authority.
+  - **Tech Stack**: Go | **Deploy**: Binary, Docker, Kubernetes
 
+- **Infisical** [![GitHub stars](https://img.shields.io/github/stars/Infisical/infisical?style=social&color=white)](https://github.com/Infisical/infisical/stargazers)
+  - **Description**: Modern end-to-end secrets management platform (MIT / Business Source) with an intuitive web dashboard, secret scanning, dynamic secrets, Kubernetes operator, SDKs, and AI agent credential security.
+  - **Tech Stack**: Node.js, TypeScript, PostgreSQL | **Deploy**: Self-hosted (Docker) or Infisical Cloud
 
-- **HashiCorp Vault (Community Edition)**
+- **SOPS (Secrets OPerationS)** [![GitHub stars](https://img.shields.io/github/stars/getsops/sops?style=social&color=white)](https://github.com/getsops/sops/stargazers)
+  - **Description**: Simple, flexible editor for encrypted files (YAML, JSON, ENV, INI, binary) supporting AWS KMS, GCP KMS, Azure Key Vault, HashiCorp Vault, and age/PGP keys for GitOps workflows.
+  - **Tech Stack**: Go | **Deploy**: CLI tool, CI/CD integration
 
-  **Open-source secrets management** (MPL 2.0) — **the most mature open-source secrets engine**, free and self-hosted . **Features**: **KV secrets storage**; **dynamic secrets** for databases, cloud providers, and SSH; **transit encryption-as-a-service**; **PKI certificate management**; **identity-based access** with a wide range of auth methods (LDAP, OIDC, Kubernetes, AppRole, and more); **audit devices** for every request. **Tech stack**: Go. **Deploy**: Self-hosted (binary, Docker, Kubernetes). **Trade-off**: **Community Edition lacks enterprise features**—no namespaces, disaster recovery, performance replication, Sentinel policies, or HSM support; no SLA and community-only support . **Best for**: teams wanting a proven, self-hosted secrets engine with dynamic credentials and PKI—willing to accept the operational burden and missing enterprise features.
+- **Teleport** [![GitHub stars](https://img.shields.io/github/stars/gravitational/teleport?style=social&color=white)](https://github.com/gravitational/teleport/stargazers)
+  - **Description**: Identity-native infrastructure access management providing zero-trust credential issuance, short-lived certificates, and session recording for SSH, Kubernetes, databases, and internal web applications.
+  - **Tech Stack**: Go | **Deploy**: Self-hosted cluster, Teleport Cloud
 
+- **Bitwarden Server** [![GitHub stars](https://img.shields.io/github/stars/bitwarden/server?style=social&color=white)](https://github.com/bitwarden/server/stargazers)
+  - **Description**: Open-source backend infrastructure for Bitwarden Password Manager and Bitwarden Secrets Manager, offering programmatic secret retrieval, CLI access, and developer SDKs.
+  - **Tech Stack**: C#, .NET, Docker | **Deploy**: Self-hosted (Docker Compose)
 
+- **Git-crypt** [![GitHub stars](https://img.shields.io/github/stars/AGWA/git-crypt?style=social&color=white)](https://github.com/AGWA/git-crypt/stargazers)
+  - **Description**: Transparent encryption of sensitive files in Git repositories. Keeps repository contents readable while automatically encrypting selected files when committed and decrypting when checked out.
+  - **Tech Stack**: C++ | **Deploy**: CLI tool, Git filter
 
-- **Infisical**
+- **OpenBao** [![GitHub stars](https://img.shields.io/github/stars/openbao/openbao?style=social&color=white)](https://github.com/openbao/openbao/stargazers)
+  - **Description**: Community-governed, truly open-source fork of HashiCorp Vault maintained under the OpenSSF (Linux Foundation) to ensure continuous open-source API-compatible secrets management under MPL-2.0.
+  - **Tech Stack**: Go | **Deploy**: Binary, Docker, Kubernetes
 
-  **Open-source secrets management platform** (open source) — **the most modern open-source Vault alternative**, with a developer-friendly UI and platform approach. **Features**: **Secrets management** across environments and projects; **secret scanning**; **PKI**; **SSH access**; **dynamic secrets**; **AI agent integration**; developer-first CLI and SDKs. **Tech stack**: Node.js, TypeScript, PostgreSQL. **Deploy**: Self-hosted (Docker) or Infisical Cloud. **Trade-off**: **Newer than Vault**—smaller ecosystem and less battle-tested at enterprise scale; some features gated to paid tiers. **Best for**: teams wanting a modern, UI-driven secrets platform they can self-host—especially those migrating from Vault or Doppler.
+- **External Secrets Operator** [![GitHub stars](https://img.shields.io/github/stars/external-secrets/external-secrets?style=social&color=white)](https://github.com/external-secrets/external-secrets/stargazers)
+  - **Description**: Kubernetes operator that synchronizes credentials from external APIs and vaults (AWS Secrets Manager, HashiCorp Vault, Azure Key Vault, GCP Secret Manager, Infisical) directly into Kubernetes native Secrets.
+  - **Tech Stack**: Go | **Deploy**: Kubernetes Operator (Helm)
 
+- **Square Keywhiz** [![GitHub stars](https://img.shields.io/github/stars/square/keywhiz?style=social&color=white)](https://github.com/square/keywhiz/stargazers)
+  - **Description**: Systems architecture designed by Square for distributing and managing secrets, certificates, and keys securely to servers and microservices with mutual TLS (mTLS).
+  - **Tech Stack**: Java | **Deploy**: Self-hosted service
 
+- **Lyft Confidant** [![GitHub stars](https://img.shields.io/github/stars/lyft/confidant?style=social&color=white)](https://github.com/lyft/confidant/stargazers)
+  - **Description**: Secrets management service developed by Lyft that uses AWS KMS and DynamoDB for end-to-end encrypted storage, user-friendly UI, and IAM-based authentication.
+  - **Tech Stack**: Python, AngularJS, AWS KMS | **Deploy**: Self-hosted AWS deployment
 
-- **OpenBao**
+- **Pinterest Knox** [![GitHub stars](https://img.shields.io/github/stars/pinterest/knox?style=social&color=white)](https://github.com/pinterest/knox/stargazers)
+  - **Description**: High-performance secret management service built by Pinterest for storing, rotating, and distributing cryptographic keys and access tokens with strict audit trails.
+  - **Tech Stack**: Go | **Deploy**: Self-hosted service
 
-  **Open-source fork of HashiCorp Vault** (MPL 2.0) — **the community-governed continuation of Vault** after HashiCorp's license change to BUSL. **Features**: **API-compatible with Vault**—drop-in replacement for existing Vault deployments; **community-driven roadmap** under the OpenSSF (Open Source Security Foundation); retains Vault's secrets engines, auth methods, and audit capabilities. **Tech stack**: Go. **Deploy**: Self-hosted (binary, Docker, Kubernetes). **Trade-off**: **Fork maturity**—newer governance and roadmap; evaluate enterprise feature parity before migrating production Vault. **Best for**: organizations that want Vault's capabilities under a truly open-source, community-governed license—especially those concerned about BUSL restrictions.
+- **AthenZ** [![GitHub stars](https://img.shields.io/github/stars/AthenZ/athenz?style=social&color=white)](https://github.com/AthenZ/athenz/stargazers)
+  - **Description**: Fine-grained role-based access control (RBAC) and dynamic X.509 certificate provisioning system for machine identities, service-to-service authentication, and short-lived tokens in dynamic cloud environments.
+  - **Tech Stack**: Java, Go | **Deploy**: Self-hosted (Docker, Kubernetes)
 
+- **CyberArk Conjur** [![GitHub stars](https://img.shields.io/github/stars/cyberark/conjur?style=social&color=white)](https://github.com/cyberark/conjur/stargazers)
+  - **Description**: Security platform specifically designed for DevOps and cloud-native application environments to authenticate, authorize, and control machine identities and secrets.
+  - **Tech Stack**: Ruby, Go | **Deploy**: Docker, Kubernetes
 
-
-- **Keygate**
-
-  **Open-source software license management platform** (open source) — **the most purpose-built open-source license enforcement platform**, positioned as a self-hosted Keygen alternative. **Features**: **Every licensing model**—subscriptions, perpetual, trials, and floating licenses; **per-device or per-user activation limits** with atomic enforcement; **license keys hashed with SHA-256**; **signed tokens for offline verification**; **seats and entitlements**; **API Providers** for atomic quota enforcement; **Stripe integration**. **Tech stack**: Go. **Deploy**: Self-hosted. **Trade-off**: **v0.1.18**—newer project with limited validation; license enforcement, not a full secrets vault. **Best for**: SaaS and software vendors selling licensed products needing activation limits and entitlement enforcement—not general-purpose API credential storage.
+- **Keygate** [![GitHub stars](https://img.shields.io/github/stars/tabloy/keygate?style=social&color=white)](https://github.com/tabloy/keygate/stargazers)
+  - **Description**: Open-source license and API credential enforcement platform supporting subscriptions, floating licenses, offline tokens, atomic quota enforcement, and Stripe integration.
+  - **Tech Stack**: Go, SQLite/PostgreSQL | **Deploy**: Single binary, Docker
 
 
 
