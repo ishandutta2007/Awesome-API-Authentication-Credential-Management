@@ -36,6 +36,8 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
 
 - [Open-Source GitHub Projects](#open-source-github-projects)
@@ -43,6 +45,12 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 - [How to Contribute](#how-to-contribute)
 
 - [Disclaimer](#disclaimer)
+
+
+
+## Sector Overview & Market Dynamics
+
+The global secrets management market is estimated at **$2.43 billion in 2025** and is projected to reach **$7.86 billion by 2034 at a 14.1% CAGR**, driven by a 17.88% surge in non-human API keys and machine identities. The sector is **moderately fragmented yet increasingly bifurcated**: hyperscalers (AWS, Azure, GCP) command native baseline storage, while enterprise privileged access and multi-cloud dynamic secrets management are concentrating around market leaders like CyberArk, HashiCorp/IBM, and specialized developer platforms.
 
 
 
