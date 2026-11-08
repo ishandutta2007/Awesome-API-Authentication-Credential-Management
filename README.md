@@ -65,59 +65,59 @@ The market structure is **moderately fragmented yet bifurcated**:
 
 ## 💻 Open-Source GitHub Projects
 
-- **HashiCorp Vault** [![GitHub stars](https://img.shields.io/github/stars/hashicorp/vault?style=social&color=white)](https://github.com/hashicorp/vault/stargazers)
+- **HashiCorp Vault** [![GitHub_Stars](https://img.shields.io/github/stars/hashicorp/vault?style=social&color=white)](https://github.com/hashicorp/vault/stargazers)
   - 📖 **Description**: The most mature open-source secrets engine (MPL 2.0 / BSL), free and self-hosted. Provides KV storage, dynamic secrets for databases and clouds, transit encryption-as-a-service, and PKI certificate authority.
   - 🛠️ **Tech Stack**: Go | 🚀 **Deploy**: Binary, Docker, Kubernetes
 
-- **Infisical** [![GitHub stars](https://img.shields.io/github/stars/Infisical/infisical?style=social&color=white)](https://github.com/Infisical/infisical/stargazers)
+- **Infisical** [![GitHub_Stars](https://img.shields.io/github/stars/Infisical/infisical?style=social&color=white)](https://github.com/Infisical/infisical/stargazers)
   - 📖 **Description**: Modern end-to-end secrets management platform (MIT / Business Source) with an intuitive web dashboard, secret scanning, dynamic secrets, Kubernetes operator, SDKs, and AI agent credential security.
   - 🛠️ **Tech Stack**: Node.js, TypeScript, PostgreSQL | 🚀 **Deploy**: Self-hosted (Docker) or Infisical Cloud
 
-- **SOPS (Secrets OPerationS)** [![GitHub stars](https://img.shields.io/github/stars/getsops/sops?style=social&color=white)](https://github.com/getsops/sops/stargazers)
+- **SOPS (Secrets OPerationS)** [![GitHub_Stars](https://img.shields.io/github/stars/getsops/sops?style=social&color=white)](https://github.com/getsops/sops/stargazers)
   - 📖 **Description**: Simple, flexible editor for encrypted files (YAML, JSON, ENV, INI, binary) supporting AWS KMS, GCP KMS, Azure Key Vault, HashiCorp Vault, and age/PGP keys for GitOps workflows.
   - 🛠️ **Tech Stack**: Go | 🚀 **Deploy**: CLI tool, CI/CD integration
 
-- **Teleport** [![GitHub stars](https://img.shields.io/github/stars/gravitational/teleport?style=social&color=white)](https://github.com/gravitational/teleport/stargazers)
+- **Teleport** [![GitHub_Stars](https://img.shields.io/github/stars/gravitational/teleport?style=social&color=white)](https://github.com/gravitational/teleport/stargazers)
   - 📖 **Description**: Identity-native infrastructure access management providing zero-trust credential issuance, short-lived certificates, and session recording for SSH, Kubernetes, databases, and internal web applications.
   - 🛠️ **Tech Stack**: Go | 🚀 **Deploy**: Self-hosted cluster, Teleport Cloud
 
-- **Bitwarden Server** [![GitHub stars](https://img.shields.io/github/stars/bitwarden/server?style=social&color=white)](https://github.com/bitwarden/server/stargazers)
+- **Bitwarden Server** [![GitHub_Stars](https://img.shields.io/github/stars/bitwarden/server?style=social&color=white)](https://github.com/bitwarden/server/stargazers)
   - 📖 **Description**: Open-source backend infrastructure for Bitwarden Password Manager and Bitwarden Secrets Manager, offering programmatic secret retrieval, CLI access, and developer SDKs.
   - 🛠️ **Tech Stack**: C#, .NET, Docker | 🚀 **Deploy**: Self-hosted (Docker Compose)
 
-- **Git-crypt** [![GitHub stars](https://img.shields.io/github/stars/AGWA/git-crypt?style=social&color=white)](https://github.com/AGWA/git-crypt/stargazers)
+- **Git-crypt** [![GitHub_Stars](https://img.shields.io/github/stars/AGWA/git-crypt?style=social&color=white)](https://github.com/AGWA/git-crypt/stargazers)
   - 📖 **Description**: Transparent encryption of sensitive files in Git repositories. Keeps repository contents readable while automatically encrypting selected files when committed and decrypting when checked out.
   - 🛠️ **Tech Stack**: C++ | 🚀 **Deploy**: CLI tool, Git filter
 
-- **OpenBao** [![GitHub stars](https://img.shields.io/github/stars/openbao/openbao?style=social&color=white)](https://github.com/openbao/openbao/stargazers)
+- **OpenBao** [![GitHub_Stars](https://img.shields.io/github/stars/openbao/openbao?style=social&color=white)](https://github.com/openbao/openbao/stargazers)
   - 📖 **Description**: Community-governed, truly open-source fork of HashiCorp Vault maintained under the OpenSSF (Linux Foundation) to ensure continuous open-source API-compatible secrets management under MPL-2.0.
   - 🛠️ **Tech Stack**: Go | 🚀 **Deploy**: Binary, Docker, Kubernetes
 
-- **External Secrets Operator** [![GitHub stars](https://img.shields.io/github/stars/external-secrets/external-secrets?style=social&color=white)](https://github.com/external-secrets/external-secrets/stargazers)
+- **External Secrets Operator** [![GitHub_Stars](https://img.shields.io/github/stars/external-secrets/external-secrets?style=social&color=white)](https://github.com/external-secrets/external-secrets/stargazers)
   - 📖 **Description**: Kubernetes operator that synchronizes credentials from external APIs and vaults (AWS Secrets Manager, HashiCorp Vault, Azure Key Vault, GCP Secret Manager, Infisical) directly into Kubernetes native Secrets.
   - 🛠️ **Tech Stack**: Go | 🚀 **Deploy**: Kubernetes Operator (Helm)
 
-- **Square Keywhiz** [![GitHub stars](https://img.shields.io/github/stars/square/keywhiz?style=social&color=white)](https://github.com/square/keywhiz/stargazers)
+- **Square Keywhiz** [![GitHub_Stars](https://img.shields.io/github/stars/square/keywhiz?style=social&color=white)](https://github.com/square/keywhiz/stargazers)
   - 📖 **Description**: Systems architecture designed by Square for distributing and managing secrets, certificates, and keys securely to servers and microservices with mutual TLS (mTLS).
   - 🛠️ **Tech Stack**: Java | 🚀 **Deploy**: Self-hosted service
 
-- **Lyft Confidant** [![GitHub stars](https://img.shields.io/github/stars/lyft/confidant?style=social&color=white)](https://github.com/lyft/confidant/stargazers)
+- **Lyft Confidant** [![GitHub_Stars](https://img.shields.io/github/stars/lyft/confidant?style=social&color=white)](https://github.com/lyft/confidant/stargazers)
   - 📖 **Description**: Secrets management service developed by Lyft that uses AWS KMS and DynamoDB for end-to-end encrypted storage, user-friendly UI, and IAM-based authentication.
   - 🛠️ **Tech Stack**: Python, AngularJS, AWS KMS | 🚀 **Deploy**: Self-hosted AWS deployment
 
-- **Pinterest Knox** [![GitHub stars](https://img.shields.io/github/stars/pinterest/knox?style=social&color=white)](https://github.com/pinterest/knox/stargazers)
+- **Pinterest Knox** [![GitHub_Stars](https://img.shields.io/github/stars/pinterest/knox?style=social&color=white)](https://github.com/pinterest/knox/stargazers)
   - 📖 **Description**: High-performance secret management service built by Pinterest for storing, rotating, and distributing cryptographic keys and access tokens with strict audit trails.
   - 🛠️ **Tech Stack**: Go | 🚀 **Deploy**: Self-hosted service
 
-- **AthenZ** [![GitHub stars](https://img.shields.io/github/stars/AthenZ/athenz?style=social&color=white)](https://github.com/AthenZ/athenz/stargazers)
+- **AthenZ** [![GitHub_Stars](https://img.shields.io/github/stars/AthenZ/athenz?style=social&color=white)](https://github.com/AthenZ/athenz/stargazers)
   - 📖 **Description**: Fine-grained role-based access control (RBAC) and dynamic X.509 certificate provisioning system for machine identities, service-to-service authentication, and short-lived tokens in dynamic cloud environments.
   - 🛠️ **Tech Stack**: Java, Go | 🚀 **Deploy**: Self-hosted (Docker, Kubernetes)
 
-- **CyberArk Conjur** [![GitHub stars](https://img.shields.io/github/stars/cyberark/conjur?style=social&color=white)](https://github.com/cyberark/conjur/stargazers)
+- **CyberArk Conjur** [![GitHub_Stars](https://img.shields.io/github/stars/cyberark/conjur?style=social&color=white)](https://github.com/cyberark/conjur/stargazers)
   - 📖 **Description**: Security platform specifically designed for DevOps and cloud-native application environments to authenticate, authorize, and control machine identities and secrets.
   - 🛠️ **Tech Stack**: Ruby, Go | 🚀 **Deploy**: Docker, Kubernetes
 
-- **Keygate** [![GitHub stars](https://img.shields.io/github/stars/tabloy/keygate?style=social&color=white)](https://github.com/tabloy/keygate/stargazers)
+- **Keygate** [![GitHub_Stars](https://img.shields.io/github/stars/tabloy/keygate?style=social&color=white)](https://github.com/tabloy/keygate/stargazers)
   - 📖 **Description**: Open-source license and API credential enforcement platform supporting subscriptions, floating licenses, offline tokens, atomic quota enforcement, and Stripe integration.
   - 🛠️ **Tech Stack**: Go, SQLite/PostgreSQL | 🚀 **Deploy**: Single binary, Docker
 
